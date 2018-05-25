@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.mymusic_hungbk.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_layout_top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Bt_close"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bt_clause_login"
+            android:text="Đóng"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:text="Đăng nhập"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/login_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/btn_login_facebook" />
+
+        <ImageButton
+            android:id="@+id/login_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/btn_login_google" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoặc nhập bằng NCT ID"
+            android:textColor="#000000"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_login_edt">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="NCT ID"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/Edt_id_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tên đăng nhập"
+                android:textColorHint="#CCCCCC"
+                android:textSize="12sp"
+                android:inputType="text|textAutoCorrect|textCapWords"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_login_edt">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Mật khẩu"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/Edt_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nhập mật khẩu"
+                android:textColorHint="#CCCCCC"
+                android:textSize="12sp"
+                android:inputType="textPassword"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login_layout_top"
+            android:text="Đăng nhập"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_tab_home"
+    tools:context="com.example.dell.mymusic_hungbk.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_login_tab_home"/>
+        <TextView
+            android:id="@+id/txv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textColor="#111111"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_ofline"
+        android:padding="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Dịch vụ"
+            android:textSize="11sp"/>
+        <LinearLayout
+            android:id="@+id/vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_indicator"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_offline_img"
+                android:layout_weight="2.30"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/vip" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NhacCuaTuiVip"
+                android:textColor="#111111"
+                android:layout_weight="8"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/ic_songlist_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/other_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_indicator"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_offline_img"
+                android:layout_weight="2.51"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingRight="-3dp"
+                android:paddingLeft="-3dp"
+                android:src="@mipmap/icon_otherapp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ứng dụng khác"
+                android:textColor="#111111"
+                android:layout_weight="8"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/ic_songlist_detail" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_ofline"
+        android:padding="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Nhạc của tui"
+            android:textSize="11sp"/>
+
+        <LinearLayout
+            android:id="@+id/baihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_indicator"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/bg_home_offline_img"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:src="@mipmap/offline_song" />
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bài Hát"
+            android:textColor="#111111"
+            android:layout_weight="8"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="27dp"
+            android:src="@mipmap/ic_songlist_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_playlistOffline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_indicator"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_offline_img"
+                android:layout_weight="2"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingRight="-3dp"
+                android:paddingLeft="-3dp"
+                android:src="@mipmap/offline_playlist" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playlist"
+                android:textColor="#111111"
+                android:layout_weight="8"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/ic_songlist_detail" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

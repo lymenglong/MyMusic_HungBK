@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyMusic_HungBK</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text_splash"><![CDATA[<b><font color = "#FF7033" size=+3>M</font><font color = "#4A34C4" size=+3>u</font><font color = "#097CD1" size=+3>s</font><font color = "#32AFA9" size=+3 >i</font><font color = "#FF0000" size=+3 >c</font></b><font color = "#F2F2F2" size=-1>Man</font><font color = "#FF1493" size=+3>U</font><font color = "#20B2AA" size=+3>N</font><font color = "#0000FF" size=+3>T</font><font color = "#FF3333" size=+3>]]></string>
+
+    <string name="title_tabs_local_one">Bài Hát</string>
+    <string name="title_tabs_local_two">Album</string>
+    <string name="title_tabs_local_three">Nghệ Sĩ</string>
+    <string name="title_tabs_local_four">Thư mục</string>
+
+    <string name="title_tabs_online_one">Bài Hát</string>
+    <string name="title_tabs_online_two">Chủ đề</string>
+    <string name="title_tabs_online_three">Thể Loại</string>
+    <string name="title_tabs_online_four">Nghệ Sĩ</string>
+
+    <string name="back">Back</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="player">Audio Player</string>
+    <string name="next">Next</string>
+
+</resources>

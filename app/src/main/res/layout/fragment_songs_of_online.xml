@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.mymusic_hungbk.fragment_child.SongsOfOnlineFragment">
+
+    <include
+        android:id="@+id/searchSongsOnline"
+        layout="@layout/search_layout" />
+
+    <LinearLayout
+        android:id="@+id/lvNetWorkSong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/imgBCheckNetworkSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@mipmap/ic_blank_networkproblem" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Mất kết nối, vui lòng thử lại"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSongsOnline"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="-38dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgArtists"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:padding="3dp"
+        android:src="@mipmap/ic_minibar"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/tvArtistsName"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="90dp"
+            android:layout_height="wrap_content"
+            android:text="Nhạc Của Tui"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textColor="@drawable/text_view_slidepager_playlist"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvArtistsDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:text="Desciption"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#ff8c8c8c"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
